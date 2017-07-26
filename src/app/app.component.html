@@ -1,4 +1,22 @@
 <!--The content below is only a placeholder and can be replaced.-->
+{{ name$ | async }}
+
+{{ test$ | async }}
+
+{{ buttonClicked$ | async }}
+
+<ul>
+  <li *ngFor="let item of items$ | async">{{ item }}</li>
+</ul>
+
+
+
+<button (click)="someFunction()">Click</button>
+<button (click)="addItem()">Add Item</button>
+
+
+
+
 <div style="text-align:center">
   <h1>
     Welcome to {{title}}!
